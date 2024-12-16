@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "ncoda_util"
+authors = [
+	{ "name" = "Galina Chirokova", "email" = "galina.chirokova@colostate.edu" },
+	{ "name" = "Robert DeMaria", "email" = "robert.demaria@colostate.edu" },
+]
+description = "Utilities for working with NCODA data."
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.11"
+dynamic = ["version"]
+license = { file = "LICENSE.txt" }
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+test = ["cartopy"]
+
+[project.urls]
+Homepage = "https://github.com/robertdemariacira/ncoda_util"
+# Documentation = "https://readthedocs.org"
+Repository = "https://github.com/robertdemariacira/ncoda_util.git"
+# Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
+
+[tool.setuptools.dynamic]
+version = { attr = "ncoda_util.__version__" }
