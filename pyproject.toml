@@ -11,7 +11,7 @@ authors = [
 ]
 description = "Utilities for working with NCODA data."
 readme = { file = "README.md", content-type = "text/markdown" }
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 dynamic = ["version"]
 license = { file = "LICENSE.txt" }
 dependencies = ["numpy"]
