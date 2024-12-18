@@ -6,8 +6,8 @@ import numpy as np
 M = 2161
 N = 1051
 L = 34
-DATA_FILE_SIZE = M * N * L * 4  # record length in bytes
-COORD_FILE_SIZE = M * N * 4  # record length in bytes
+DATA_FILE_SIZE = M * N * L * 4  # Data(3D) record length in bytes
+COORD_FILE_SIZE = M * N * 4  # Coordinate(2D) record length in bytes
 
 MISSING = -999.0
 MISSING_ATOL = 1e-6
